@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color:white;
+    padding: 1rem 2rem;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding:1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+nav button{
+    border-radius: 0.5rem;
+    background-color: aquamarine;
+    color: black;
+    border-color: aquamarine;
+    padding-right: 0.9rem;
+    padding-left: 0.9rem;
+}
+.dashboard{
+      padding: 1rem 2rem;
+      background-color: rgb(11, 2, 5);
+      color: white;
+      height: 130vh;
+}
+
+.dashboard ul li{
+    list-style: none;
+    padding: 1rem 0;
+}
+main{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    width: 100vw;
+}
+h2{
+    font-size: 35px;
+}
+img{
+    border-radius: 1rem;
+}
+.sub-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem;
+}
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1rem;
+}
+.card-section div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+h3{
+    color: aquamarine;
+    font-weight: bold;
+}
+.card1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1rem;
+     
+}
+.card1 div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+button{
+    background-color: aquamarine;
+    color: black;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    border-color: aquamarine;
+}
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+/*.visuals{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}*/
+
+@media screen and (max-width:768px){
+    header nav a{
+        display: none;
+    }
+    .left{
+        display: none;
+    }
+    .sub-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card-section{
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 auto;
+    }
+    .card1{
+         grid-template-columns: repeat(2,1fr);
+    }
+
+}
